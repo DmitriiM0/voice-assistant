@@ -1,4 +1,3 @@
-import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -23,7 +22,6 @@ export default function Dashboard() {
   const [content, setContent] = useState();
   const dispatch = useDispatch();
   const token = useSelector((token) => token);
-  console.log(token);
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -57,7 +55,7 @@ export default function Dashboard() {
         <AppBar>
           <Link href="/">
             <Image
-              src="/voice-assistant/logo.svg"
+              src="/logo.svg"
               alt="Vercel Logo"
               width={195}
               height={34}

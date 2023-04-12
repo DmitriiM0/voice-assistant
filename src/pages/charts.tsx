@@ -155,7 +155,6 @@ export const barOptions: ChartOptions<'bar'> = {
           return '';
         },
         labelPointStyle(tooltipItem) {
-          // console.log(tooltipItem);
         },
       },
     },
