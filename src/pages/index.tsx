@@ -29,7 +29,7 @@ export default function Home() {
         <AppBar>
           <Link href="/">
             <Image
-              src="/voice-assistant/logo.svg"
+              src="/logo.svg"
               alt="Vercel Logo"
               width={195}
               height={34}
@@ -62,7 +62,7 @@ export default function Home() {
           </TextWrapper>
           <ImageWrapper>
             <Image
-              src="/voice-assistant/woman.jpg"
+              src="/woman.jpg"
               alt="Vercel Logo"
               width={450}
               height={532}

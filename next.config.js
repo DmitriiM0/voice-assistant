@@ -4,7 +4,6 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  basePath: '/voice-assistant'
 };
 
 module.exports = nextConfig;

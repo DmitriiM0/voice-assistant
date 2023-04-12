@@ -57,7 +57,7 @@ export default function Login() {
           <Form>
             <Link href="/">
               <Image
-                src="/voice-assistant/logo.svg"
+                src="/logo.svg"
                 alt="logo"
                 width={160}
                 height={32}
@@ -86,7 +86,7 @@ export default function Login() {
               />
               <span>
                 <Image
-                  src="/voice-assistant/eye.svg"
+                  src="/eye.svg"
                   alt="eye icon"
                   width={20}
                   height={20}
@@ -112,7 +112,7 @@ export default function Login() {
           <Gallery>
             <div className="image-block">
               <Image
-                src="/voice-assistant/calls.png"
+                src="/calls.png"
                 alt="calls"
                 fill={true}
                 priority
@@ -124,7 +124,7 @@ export default function Login() {
                 }}
               />
               <Image
-                src="/voice-assistant/dashboard.png"
+                src="/dashboard.png"
                 alt="dashboard"
                 fill={true}
                 priority

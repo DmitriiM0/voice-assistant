@@ -90,7 +90,7 @@ export default function Dashboard() {
           </TextWrapper>
           <ImageWrapper>
             <Image
-              src="/voice-assistant/woman.jpg"
+              src="/woman.jpg"
               alt="Vercel Logo"
               width={450}
               height={532}
