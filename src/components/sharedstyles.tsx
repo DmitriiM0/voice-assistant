@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 //main
-
 const ImageWrapper = styled.div`
   max-width: 450;
   max-height: 532;
   background-color: rgba(79, 70, 229, 0.2);
   border-radius: ${({ theme }) => theme.radius};
+  position: relative;
 
   & .image {
     border-radius: 10px;
@@ -49,13 +49,6 @@ const Container = styled.div`
   height: 100vh;
   min-height: 100vh;
   max-width: 1320px;
-`;
-
-const Background = styled.div`
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background: #eee;
 `;
 
 const Main = styled.main`
@@ -134,6 +127,7 @@ const Button = styled.button`
   border: none;
   border-radius: ${({ theme }) => theme.radius};
   cursor: pointer;
+  transition: all 0.3s ease-out;
 
   &:hover {
     transition: all 0.3s ease-out;
@@ -149,6 +143,7 @@ const OtlinedButton = styled.button`
   border: 1px solid ${({ theme }) => theme.colors.primary};
   border-radius: ${({ theme }) => theme.radius};
   cursor: pointer;
+  transition: all 0.3s ease-out;
 
   &:hover {
     transition: all 0.3s ease-out;
@@ -185,8 +180,11 @@ const LoginLayout = styled.div`
 `;
 
 const Form = styled.div`
+  max-width: 50%;
   display: flex;
   flex-direction: column;
+  //   justify-items: stretch;
+  //   align-items: stretch;
 
   & .form-title {
     font-style: normal;
@@ -281,16 +279,44 @@ const Remember = styled.div`
 
 const Gallery = styled.div`
   display: flex;
-  width: 900px;
-  height: 574px;
+  width: 46vw;
+  height: 50vh;
   justify-content: center;
   align-items: center;
 
   & .image-block {
     position: relative;
-    width: 629px;
-    height: 354px;
+    width: 30vw;
+    height: 33vh;
   }
+
+  & .image-block .image-1 {
+    position: relative;
+    box-shadow: 0px 4px 32px #e8e7ff;
+    border-radius: 8px;
+    left: -135;
+    top: -110;
+  }
+
+  & .image-block .image-2 {
+    position: relative;
+    box-shadow: 0px 4px 32px #e8e7ff;
+    border-radius: 8px;
+    left: 135;
+    top: 110;
+  }
+
+  //   display: flex;
+  //   width: 900px;
+  //   height: 574px;
+  //   justify-content: center;
+  //   align-items: center;
+
+  //   & .image-block {
+  //     position: relative;
+  //     width: 629px;
+  //     height: 354px;
+  //   }
 `;
 
 const DescriptionLogin = styled.div`
@@ -395,12 +421,20 @@ const Calls = styled.div`
     color: ${({ theme }) => theme.colors.text};
   }
 
-  & .circle {
+  & .circle-1 {
     width: 8px;
     height: 8px;
     margin-right: 0.5rem;
     border-radius: ${({ theme }) => theme.radius};
     background: #eaa43a;
+  }
+
+  & .circle-2 {
+    width: 8px;
+    height: 8px;
+    margin-right: 0.5rem;
+    border-radius: ${({ theme }) => theme.radius};
+    background: #4f46e5;
   }
 `;
 
@@ -415,6 +449,7 @@ const Dots = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 
   & .dot {
     border: 2px solid #636366;
@@ -471,7 +506,6 @@ const LinkList = styled.ul`
 
 export {
   Container,
-  //   Main,
   Title,
   Description,
   Button,
@@ -500,5 +534,4 @@ export {
   Chips,
   Calls,
   ChartWrapper,
-  Background,
 };

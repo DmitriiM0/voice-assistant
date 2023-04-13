@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import {
   Container,
@@ -13,7 +12,6 @@ import {
   LinkList,
   ImageWrapper,
   TextWrapper,
-  Background,
 } from '../components/sharedstyles';
 
 export default function Home() {
@@ -66,6 +64,7 @@ export default function Home() {
               alt="Vercel Logo"
               width={450}
               height={532}
+			// fill
               className="image"
               priority
             />
@@ -89,9 +88,7 @@ export default function Home() {
             <p>Отслеживание результатов звонков в личном кабинете</p>
           </Card>
         </CardContainer>
-        <div className="circle" />
       </Container>
-      <Background />
     </>
   );
 }
